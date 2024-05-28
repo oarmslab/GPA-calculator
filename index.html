@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>GPA Calculator</h1>
+        </header>
+        <aside>
+            <h5>This application calculates the GPA for most higher education institutions in Cameroon. To determine your GPA, first select the number of courses and choose the GPA scale. Then, enter the course titles, the grades earned, and the corresponding credit values. Finally, click the 'Save Subjects' button, and a summary table displaying your results and calculated GPA will be provided.</h5>
+            <div class="form-group">
+                <label for="n_input">Number of Subjects:</label>
+                <input type="number" id="n_input" value="1" min="1">
+            </div>
+            <div class="form-group">
+                <label for="t_input">GPA scale:</label>
+                <select id="t_input">
+                    <option value="4">GPA on 4</option>
+                    <option value="5">GPA on 5</option>
+                </select>
+            </div>
+        </aside>
+        <main>
+            <div class="box" id="courses-box">
+                <h2>Course title or course code, Earned grade, Credit value</h2>
+                <div id="subject_fields"></div>
+                <button id="save_s">Save Subjects</button>
+            </div>
+            <div class="box" id="results-box">
+                <h2>Results</h2>
+                <table id="table_complete"></table>
+            </div>
+            <div class="box" id="gpa-box">
+                <h2>Grade Point Average (GPA)</h2>
+                <p>Your GPA is <span id="your_GPA"></span></p>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2024 oarmslab</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
